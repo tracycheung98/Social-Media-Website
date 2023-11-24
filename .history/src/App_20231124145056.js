@@ -21,7 +21,13 @@ const firebaseConfig = {
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+  apiKey: "AIzaSyA1VZy-x7OsyjHH0avHYZ0I5vo79-qETI4",
+  authDomain: "social-media-b372c.firebaseapp.com",
+  projectId: "social-media-b372c",
+  storageBucket: "social-media-b372c.appspot.com",
+  messagingSenderId: "898615765544",
+  appId: "1:898615765544:web:8d6176714795ce33f2a31d",
+  measurementId: "G-Z4PCD5M13G"
 };
 
 // Initialize Firebase
