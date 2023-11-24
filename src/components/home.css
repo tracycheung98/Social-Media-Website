@@ -1,0 +1,106 @@
+/* Post css */
+.nav-tabs, .nav-link{
+  color: #74abea;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  color: #4a94e9;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px 20px;
+}
+
+.upload{
+  display:flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.upload-form{
+  margin: 1em;
+}
+
+.titles{
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #616467;
+  background-color: transparent;
+}
+
+.posts .card {
+  width: 18rem;
+  max-height: 36rem;
+  height: fit-content;
+  border-radius: 0%;
+}
+
+.posts .card-img {
+  border-radius: 0%;
+}
+
+.posts .card-body {
+  overflow: auto;
+}
+
+.postUser {
+  font-weight: bolder;
+  color: #4a94e9;
+}
+
+.postTime {
+  font-family: "Lucida Console", "Courier New", monospace;
+  font-size: small;
+}
+
+.upload-preview .card{
+  width: 18rem;
+  max-height: 36rem;
+  height: fit-content;
+  border-radius: 0%;
+}
+.upload-preview .card-img {
+  border-radius: 0%;
+}
+
+.upload-preview .card-body {
+  overflow: auto;
+}
+
+
+.searchBar {
+  display: inline-block;
+  position: relative;
+}
+
+.searchBar input[type="text"] {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.searchBar button[type="submit"] {
+  background-color: #accbee;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: .9s ease;
+}
+
+.searchBar button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: #74abea;
+}
