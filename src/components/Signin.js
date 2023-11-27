@@ -59,7 +59,7 @@ export default function SignIn() {
             <div className="form-border"></div>
 
             <button id="submit-btn" onClick={handleSignIn}>LOGIN</button>
-            {succeed && <Navigate to="/" />}
+            {succeed && <Navigate to="/Social-Media-Website" />}
             <Link to="/Social-Media-Website/register" id="signup">Don't have account yet?</Link>
           </div>
         </div>
