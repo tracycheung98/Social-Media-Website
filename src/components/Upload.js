@@ -147,8 +147,7 @@ export default function Upload() {
                        
                     </div>
                     <div>
-                        <input className="form-control"
-                            type="text"
+                        <textarea className="form-control"
                             placeholder="Caption"
                             id="caption"
                             value={caption}
@@ -166,9 +165,7 @@ export default function Upload() {
                     <Card>
                         <Card.Img src={URL.createObjectURL(photo)} />
                         <Card.Body>
-                            <Card.Text>
-                                {caption}
-                            </Card.Text>
+                            <div dangerouslySetInnerHTML={{ __html: caption.replace(/\n/g, '<br />') }} style={{ whiteSpace: 'pre-line' }} />
                         </Card.Body>
                     </Card>
 

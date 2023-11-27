@@ -51,15 +51,15 @@ export default function Posts(props) {
             <h2 className="titles">Posts</h2>
             <div className="posts">
                 {posts.map((post) => (
-                    <Card>
+                    <Card key={post.id}>
                         <Card.Img  src={post.photoUrl} />
                         <Card.Body>
-                            <Card.Text>
+                            {/* <Card.Text> */}
                             <span className="postUser"> {post.username}  &nbsp; </span>
-                            {post.caption}
+                            <div dangerouslySetInnerHTML={{ __html: post.caption.replace(/\n/g, '<br />') }} style={{ whiteSpace: 'pre-line' }} />
                             <p className="postTime"> {new Date(post.timestamp).toLocaleString('en-US', options)}</p>
                                
-                            </Card.Text>
+                            {/* </Card.Text> */}
 
                         </Card.Body>
                     </Card>
