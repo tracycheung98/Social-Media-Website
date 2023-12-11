@@ -104,3 +104,9 @@
   color: rgb(255, 255, 255);
   background-color: #74abea;
 }
+
+.likeButton{
+  color: red;
+  background: transparent;
+  border: 0;
+}
